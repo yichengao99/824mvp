@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBB Loan System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 10%; /* Apply left and right padding to the entire page */
+            background: #f4f4f4; /* Optional: sets a background color for the entire page */
+        }
+        .top-nav {
+            background: #003366;
+            color: white;
+            padding: 10px 0; /* Remove horizontal padding here, since it's now on the body */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-nav .logo { font-size: 24px; font-weight: bold; }
+        .top-nav .navigation { list-style: none; display: flex; margin: 0; padding: 0; }
+        .top-nav .navigation li { padding: 0 15px; }
+        .top-nav .navigation a { color: white; text-decoration: none; }
+        .top-nav .navigation a:hover { text-decoration: underline; }
+        .top-nav .right-section { display: flex; align-items: center; }
+        .search-box { margin-right: 10px; }
+        .login-button {
+            background: #0055cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px; /* Optional: adds rounded corners to the button */
+        }
+        .login-button:hover { background: #0066cc; }
+
+        main { background: white; padding: 20px; margin-top: 20px; /* Added for visual separation from nav */ }
+    </style>
+</head>
+<body>
+
+<div class="top-nav">
+    <div class="logo">CBB</div>
+    <ul class="navigation">
+        <li><a href="#">My Loan</a></li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+    <div class="right-section">
+        <input type="text" class="search-box" placeholder="Search...">
+        <button class="login-button">Log in / Register</button>
+    </div>
+</div>
+
+<main>
+    <!-- Main content goes here -->
+    <h2>Welcome to CBB Loan System</h2>
+    <p>Here you can manage your loans, keep track of payments, and explore new loan options.</p>
+    <!-- Further content -->
+</main>
+
+</body>
+</html>
