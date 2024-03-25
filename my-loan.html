@@ -1,0 +1,93 @@
+<!-- my-loan.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBB Loan System - My Loan</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet -->
+</head>
+<body>
+
+<div class="top-nav">
+    <div class="logo">CBB</div>
+    <ul class="navigation">
+        <li><a href="my-loan.html">My Loan</a></li> <!-- This page -->
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+    <div class="right-section">
+        <input type="text" class="search-box" placeholder="Search...">
+        <button class="login-button">sign out</button>
+    </div>
+</div>
+
+<main>
+    <h2>Your Loan with RBC</h2>
+    <p>Please review the following questions related to your loan. Your answers will help us serve you better.</p>
+
+    <form action="/submit-loan-info" method="post">
+        <div class="form-question">
+            <label for="loan-purpose">What was the purpose of your loan?</label>
+            <select id="loan-purpose" name="loan_purpose">
+                <option value="home">Home Purchase</option>
+                <option value="education">Education</option>
+                <option value="vehicle">Vehicle Financing</option>
+                <option value="business">Business Investment</option>
+                <option value="debt_consolidation">Debt Consolidation</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-question">
+            <label for="payment-status">Are you current with your loan payments?</label>
+            <select id="payment-status" name="payment_status">
+                <option value="current">Yes, I am current</option>
+                <option value="behind">No, I am behind</option>
+            </select>
+        </div>
+
+        <div class="form-question">
+            <label for="financial-change">Has your financial situation changed since obtaining the loan?</label>
+            <select id="financial-change" name="financial_change">
+                <option value="better">Yes, it has improved</option>
+                <option value="worse">Yes, it has worsened</option>
+                <option value="same">No, it's about the same</option>
+            </select>
+        </div>
+
+        <div class="form-question">
+            <label for="additional-services">Are you interested in additional services?</label>
+            <div>
+                <input type="checkbox" id="savings-account" name="additional_services" value="savings_account">
+                <label for="savings-account">Savings Account</label>
+            </div>
+            <div>
+                <input type="checkbox" id="credit-card" name="additional_services" value="credit_card">
+                <label for="credit-card">Credit Card</label>
+            </div>
+            <div>
+                <input type="checkbox" id="investment-advice" name="additional_services" value="investment_advice">
+                <label for="investment-advice">Investment Advice</label>
+            </div>
+        </div>
+
+        <div class="form-question">
+            <label for="refinance-interest">Are you interested in loan refinancing options?</label>
+            <div>
+                <input type="radio" id="refinance-yes" name="refinance_interest" value="yes">
+                <label for="refinance-yes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="refinance-no" name="refinance_interest" value="no" checked>
+                <label for="refinance-no">No</label>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-button">Submit Responses</button>
+    </form>
+</main>
+
+
+</body>
+</html>

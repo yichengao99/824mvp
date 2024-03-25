@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 5%; /* Apply left and right padding to the entire page */
+    background: #f4f4f4; /* Optional: sets a background color for the entire page */
+}
+.top-nav {
+    background: #003366;
+    color: white;
+    padding: 10px 10%; /* Add left and right padding to match the body padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-nav .logo { font-size: 24px; font-weight: bold; }
+.top-nav .navigation { list-style: none; display: flex; margin: 0; padding: 0; }
+.top-nav .navigation li { padding: 0 15px; }
+.top-nav .navigation a { color: white; text-decoration: none; }
+.top-nav .navigation a:hover { text-decoration: underline; }
+.top-nav .right-section { display: flex; align-items: center; }
+.search-box { margin-right: 10px; }
+.login-button {
+    background: #0055cc;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 4px; /* Optional: adds rounded corners to the button */
+}
+.login-button:hover { background: #0066cc; }
+
+main { background: white; padding: 20px; margin-top: 20px; /* Added for visual separation from nav */ }
+
+/* Existing styles... */
+
+/* Form Styling */
+form {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-question {
+    margin-bottom: 15px;
+}
+
+.form-question label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-question select,
+.form-question input[type=text],
+.form-question input[type=email],
+.form-question input[type=number] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-question input[type=checkbox],
+.form-question input[type=radio] {
+    margin-right: 5px;
+}
+
+.form-question div {
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background: #218838;
+}
+
+/* Additional Styles */
+/* You can add more styles below as necessary */
