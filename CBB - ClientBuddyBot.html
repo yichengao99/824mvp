@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>CBB - ClientBuddyBot</title>
+    <style>
+        .team-member {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .team-photo {
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 2rem;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>CBB (ClientBuddyBot)</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact" role="button">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Revolutionize Client Onboarding hahaha</h2>
+                    <h3>With Robotic Process Automation</h3>
+                </hgroup>
+                <p>At CBB (ClientBuddyBot), we leverage Robotic Process Automation (RPA) to streamline and enhance the client onboarding process for Financial Institutions. Discover how our RPA solutions can transform your business operations.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/random/400x300?technology" alt="RPA Technology">
+                    <figcaption><a href="https://unsplash.com/s/photos/technology" target="_blank">Image Source</a></figcaption>
+                </figure>
+                <h3 id="demo">Live Demo</h3>
+                <p>Experience the efficiency of ClientBuddyBot with our live demo. Watch as the bot gathers information, updates bank systems in real-time, calculates ratios, and assists in the underwriting process for credit products.</p>
+                <!-- Placeholder for demo, potentially an iframe or script embed -->
+                <div class="demo-placeholder" style="height: 200px; background: #f3f4f6; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem;">
+                    <span>Interactive Demo Coming Soon</span>
+                </div>
+
+                <h2 id="team">Meet Our Team</h2>
+                <div class="team-grid">
+                    <!-- Team members -->
+                    <div class="team-member">
+                        <img src="./images/sid.jpg" alt="Siddharth Bala" class="team-photo">
+                        <h4>Siddharth Bala</h4>
+                        <p>Chief Executive Officer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./images/brad.jpg" alt="Bradford Ndlovu" class="team-photo">
+                        <h4>Bradford Ndlovu</h4>
+                        <p>Chief Operations Officer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./images/carol.jpg" alt="Carol Sun" class="team-photo">
+                        <h4>Carol Sun</h4>
+                        <p>Cost Controller</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./images/meredith.jpg" alt="Meredith Han" class="team-photo">
+                        <h4>Meredith Han</h4>
+                        <p>Finance Manager</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./images/deonne.png" alt="Deonne Devonish" class="team-photo">
+                        <h4>Deonne Devonish</h4>
+                        <p>Chief Strategy Officer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./images/yg.png" alt="Yichen Gao" class="team-photo">
+                        <h4>Yichen Gao</h4>
+                        <p>Chief Technology Officer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="./images/isaac.png" alt="Isaac Ocholi" class="team-photo">
+                        <h4>Isaac Ocholi</h4>
+                        <p>Chief Financial Officer</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Stay Updated</h2>
+                    <h3>Subscribe to our Newsletter</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+                    <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer class="container">
+        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a></small>
+    </footer>
+</body>
+</html>
