@@ -26,7 +26,7 @@
     <h2>Account Opening Information</h2>
     <p>Please review the following questions related to your loan. Your answers will help us serve you better.</p>
 
-    <form action="/submit-loan-info" method="post">
+    <form action="/submit-loan-info" method="post" enctype="multipart/form-data">
         <div class="form-question">
             <label for="loan-purpose">What was the purpose of your loan?</label>
             <select id="loan-purpose" name="loan_purpose">
@@ -84,18 +84,46 @@
             </div>
         </div>
 
-        <!-- ... other form fields above ... -->
+        <!-- Thesis component starts here -->
+        <div class="form-question">
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" name="company_name" required>
+        </div>
 
-<div class="form-question">
-    <!-- When this link is clicked, the browser will navigate to the 'submission-confirmation.html' page -->
-    <a href="submission-confirmation.html" class="submit-link">
-        <button type="button" class="submit-button">Submit Responses</button>
-    </a>
-</div>
+        <div class="form-question">
+            <label for="company-tax-id">Company Tax ID</label>
+            <input type="text" id="company-tax-id" name="company_tax_id" required>
+        </div>
+
+        <div class="form-question">
+            <label for="company-address">Company Address</label>
+            <textarea id="company-address" name="company_address" required></textarea>
+        </div>
+
+        <div class="form-question">
+            <label for="products-sought">Products Company is seeking from Financial Institution</label>
+            <select id="products-sought" name="products_sought">
+                <option value="deposit_accounts">Deposit Accounts</option>
+                <option value="line_of_credit">Line of Credit</option>
+                <option value="fx_facility">FX Facility</option>
+                <option value="venture_debt">Venture Debt</option>
+            </select>
+        </div>
+
+        <div class="form-question">
+            <label for="financial-statements">Upload Financial Statements here</label>
+            <input type="file" id="financial-statements" name="financial_statements" accept=".pdf,.doc,.docx,.xls,.xlsx" required>
+        </div>
+        <!-- Thesis component ends here -->
+
+        <div class="form-question">
+            <a href="submission-confirmation.html" class="submit-link">
+                <button type="button" class="submit-button">Submit Responses</button>
+            </a>
+        </div>
 
     </form>
 </main>
-
 
 </body>
 </html>
